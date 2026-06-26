@@ -246,6 +246,41 @@ hr {
     margin-top: 15px;
 }
 
+.galeria img {
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.galeria img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 30px rgba(201, 168, 76, 0.3);
+    border-color: #c9a84c;
+}
+
+/* --- Clase .btn-cotizar: botón CTA en cada producto --- */
+.btn-cotizar {
+    display: inline-block;
+    margin-top: 18px;
+    padding: 12px 30px;
+    background: linear-gradient(135deg, #25D366, #128C7E);
+    color: #fff;
+    font-family: 'Verdana', 'Arial', sans-serif;
+    font-size: 0.95em;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-decoration: none;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(37, 211, 102, 0.3);
+}
+
+.btn-cotizar:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 25px rgba(37, 211, 102, 0.5);
+    background: linear-gradient(135deg, #2ee07a, #128C7E);
+}
+
 /* --- Testimonios - Selector por ID --- */
 #testimonios {
     background: linear-gradient(135deg, #1e1e36, #2a1a3a);
@@ -410,4 +445,120 @@ footer p {
 
 footer p:first-child {
     color: #b8a88a;
+}
+
+/* --- Botón flotante WhatsApp --- */
+.whatsapp-float {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    width: 60px;
+    height: 60px;
+    background: #25D366;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4);
+    transition: all 0.3s ease;
+    z-index: 1000;
+}
+
+.whatsapp-float:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 30px rgba(37, 211, 102, 0.6);
+}
+
+.whatsapp-float img {
+    display: block;
+}
+
+/* --- Lightbox overlay --- */
+.lightbox {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    z-index: 2000;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.lightbox-cerrar {
+    position: absolute;
+    top: 25px;
+    right: 40px;
+    font-size: 3em;
+    color: #fff;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    font-family: 'Verdana', 'Arial', sans-serif;
+    line-height: 1;
+}
+
+.lightbox-cerrar:hover {
+    color: #c9a84c;
+}
+
+.lightbox-imagen {
+    max-width: 90%;
+    max-height: 85%;
+    border-radius: 8px;
+    border: 3px solid #c9a84c;
+    box-shadow: 0 0 50px rgba(201, 168, 76, 0.2);
+    cursor: default;
+}
+
+/* --- Sección Confianza - Selector por ID --- */
+#confianza {
+    background: linear-gradient(135deg, #1e1e36, #2a1a3a);
+    border-radius: 15px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+.confianza-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.confianza-item {
+    padding: 30px 20px;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 12px;
+    border: 1px solid rgba(201, 168, 76, 0.1);
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.confianza-item:hover {
+    transform: translateY(-5px);
+    border-color: #c9a84c;
+}
+
+.confianza-icono {
+    display: block;
+    font-size: 2.8em;
+    margin-bottom: 15px;
+}
+
+.confianza-item h3 {
+    color: #c9a84c;
+    font-size: 1.15em;
+    margin-top: 0;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+.confianza-item p {
+    font-size: 0.95em;
+    color: #b8a88a;
+    text-align: center;
+    margin-bottom: 0;
 }

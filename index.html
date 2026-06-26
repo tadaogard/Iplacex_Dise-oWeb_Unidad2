@@ -32,6 +32,7 @@
                 <li><a href="#nuestra-historia">Nuestra Historia</a></li>
                 <li><a href="#productos">Productos</a></li>
                 <li><a href="#testimonios">Testimonios</a></li>
+                <li><a href="#confianza">Confianza</a></li>
                 <li><a href="#contacto">Contacto</a></li>
             </ul>
         </nav>
@@ -115,6 +116,7 @@
                     <img src="images/producto-plata-3.jpg" alt="Joyas en plata con piedras semipreciosas 3" width="200" loading="lazy">
                     <img src="images/producto-plata-4.jpg" alt="Joyas en plata con piedras semipreciosas 4" width="200" loading="lazy">
                 </div>
+                <a class="btn-cotizar" href="https://wa.me/56989234239" target="_blank" rel="noopener noreferrer">Cotizar por WhatsApp</a>
             </article>
 
             <article class="producto">
@@ -128,6 +130,7 @@
                     <img src="images/producto-mostacilla-2.jpg" alt="Joyas en mostacilla calibrada 2" width="200" loading="lazy">
                     <img src="images/producto-mostacilla-3.jpg" alt="Joyas en mostacilla calibrada 3" width="200" loading="lazy">
                 </div>
+                <a class="btn-cotizar" href="https://wa.me/56989234239" target="_blank" rel="noopener noreferrer">Cotizar por WhatsApp</a>
             </article>
 
             <article class="producto">
@@ -139,6 +142,7 @@
                 <div class="galeria">
                     <img src="images/producto-alambrismo-1.jpg" alt="Joyas en alambrismo" width="200" loading="lazy">
                 </div>
+                <a class="btn-cotizar" href="https://wa.me/56989234239" target="_blank" rel="noopener noreferrer">Cotizar por WhatsApp</a>
             </article>
 
             <article class="producto">
@@ -174,6 +178,35 @@
 
         <hr>
 
+        <!-- Por qué confiar en nosotros -->
+        <section id="confianza">
+            <h2>Por Qué Confiar en Nosotros</h2>
+            <div class="confianza-grid">
+                <div class="confianza-item">
+                    <span class="confianza-icono">&#x1F48E;</span>
+                    <h3>Materiales Certificados</h3>
+                    <p>Plata nacional, piedras semipreciosas auténticas y cristales premium garantizados.</p>
+                </div>
+                <div class="confianza-item">
+                    <span class="confianza-icono">&#x1F3ED;</span>
+                    <h3>Hecho a Mano</h3>
+                    <p>Cada pieza es elaborada artesanalmente por María Angélica, orfebre de oficio.</p>
+                </div>
+                <div class="confianza-item">
+                    <span class="confianza-icono">&#x1F4E6;</span>
+                    <h3>Envío Seguro</h3>
+                    <p>Empacamos con cuidado para que tu joya llegue en perfectas condiciones a todo Chile.</p>
+                </div>
+                <div class="confianza-item">
+                    <span class="confianza-icono">&#x1F468;&#x200D;&#x1F4BB;</span>
+                    <h3>Atención Personalizada</h3>
+                    <p>Te asesoramos vía WhatsApp para encontrar la joya perfecta para ti o para regalar.</p>
+                </div>
+            </div>
+        </section>
+
+        <hr>
+
         <!-- Contacto -->
         <section id="contacto">
             <h2>Contacto</h2>
@@ -192,11 +225,11 @@
             <ul>
                 <li>
                     <strong>Instagram:</strong>
-                    <a href="https://www.instagram.com/mavs_jewerly" target="_blank" rel="noopener noreferrer">@mavs_jewerly</a>
+                    <a href="https://www.instagram.com/mavs_jewelry" target="_blank" rel="noopener noreferrer">@mavs_jewelry</a>
                 </li>
                 <li>
                     <strong>TikTok:</strong>
-                    <a href="https://www.tiktok.com/@mavs_jewerly" target="_blank" rel="noopener noreferrer">@mavs_jewerly</a>
+                    <a href="https://www.tiktok.com/@mavs_jewelry" target="_blank" rel="noopener noreferrer">@mavs_jewelry</a>
                 </li>
                 <li>
                     <strong>Facebook:</strong>
@@ -232,6 +265,52 @@
         <p>&copy; 2026 Mavs Jewelry. Todos los derechos reservados.</p>
         <p>Joyas artesanales hechas a mano con amor y dedicación.</p>
     </footer>
+
+    <!-- Lightbox overlay -->
+    <div id="lightbox" class="lightbox">
+        <span class="lightbox-cerrar">&times;</span>
+        <img class="lightbox-imagen" src="" alt="">
+    </div>
+
+    <!-- Botón flotante WhatsApp -->
+    <a class="whatsapp-float" href="https://wa.me/56989234239" target="_blank" rel="noopener noreferrer">
+        <img src="images/whatsapp-icon.svg" alt="WhatsApp" width="30" height="30">
+    </a>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var galerias = document.querySelectorAll('.galeria');
+            var lightbox = document.getElementById('lightbox');
+            var lightboxImg = lightbox.querySelector('.lightbox-imagen');
+            var closeBtn = lightbox.querySelector('.lightbox-cerrar');
+
+            galerias.forEach(function (galeria) {
+                galeria.addEventListener('click', function (e) {
+                    if (e.target.tagName === 'IMG') {
+                        lightboxImg.src = e.target.src;
+                        lightboxImg.alt = e.target.alt;
+                        lightbox.style.display = 'flex';
+                    }
+                });
+            });
+
+            function cerrarLightbox() {
+                lightbox.style.display = 'none';
+            }
+
+            closeBtn.addEventListener('click', cerrarLightbox);
+            lightbox.addEventListener('click', function (e) {
+                if (e.target === lightbox) {
+                    cerrarLightbox();
+                }
+            });
+            document.addEventListener('keydown', function (e) {
+                if (e.key === 'Escape') {
+                    cerrarLightbox();
+                }
+            });
+        });
+    </script>
 
 </body>
 </html>
