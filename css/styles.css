@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap');
 /* ========================================
    Mavs Jewelry - Estilos CSS
    Evaluación N°2 - Diseño Web
@@ -11,36 +12,40 @@
 }
 
 body {
-    font-family: 'Georgia', 'Times New Roman', serif;
-    background-color: #1a1a2e;
-    color: #e8e0d4;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #F8EFEB;
+    color: #40363C;
     line-height: 1.7;
     padding: 0;
 }
 
+
 /* --- Selector por elemento: Header --- */
 header {
-    background: linear-gradient(135deg, rgba(15, 15, 26, 0.85) 0%, rgba(26, 26, 46, 0.85) 50%, rgba(45, 27, 61, 0.85) 100%), url('../images/fondo.png') center / cover no-repeat;
+    background: linear-gradient(rgba(248,239,235,.75), rgba(248,239,235,.75)), url('../images/fondo.png') center / cover no-repeat;
     text-align: center;
     padding: 60px 20px 30px;
     border-bottom: 3px solid #c9a84c;
 }
 
 header h1 {
-    font-family: 'Georgia', serif;
-    font-size: 3em;
-    color: #c9a84c;
-    letter-spacing: 6px;
-    text-transform: uppercase;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 4rem;
+    font-weight: 600;
+    color: #40363C;
+    letter-spacing: 2px;
+    text-transform: none;
+    text-shadow: none;
     margin-bottom: 8px;
 }
 
 header > p {
-    font-family: 'Verdana', 'Arial', sans-serif;
-    font-size: 1em;
-    color: #b8a88a;
-    font-style: italic;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    color: #8B7485;
+    font-weight: 400;
+    letter-spacing: 1px;
+    font-style: normal;
     margin-bottom: 20px;
 }
 
@@ -73,7 +78,7 @@ nav ul li a {
     font-family: 'Verdana', 'Arial', sans-serif;
     display: inline-block;
     padding: 10px 20px;
-    color: #e8e0d4;
+    color: #40363C;
     text-decoration: none;
     font-size: 0.9em;
     font-weight: bold;
@@ -85,9 +90,9 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #c9a84c;
-    border-color: #c9a84c;
-    background-color: rgba(201, 168, 76, 0.1);
+    color: #40363C;
+    border-color: #40363C;
+    background-color: #E4C8D3;
 }
 
 /* --- Selector por elemento: Main y secciones --- */
@@ -104,7 +109,7 @@ section {
 section h2 {
     font-family: 'Georgia', serif;
     font-size: 2.2em;
-    color: #c9a84c;
+    color: #40363C;
     text-align: center;
     margin-bottom: 30px;
     letter-spacing: 3px;
@@ -118,7 +123,7 @@ section h2 {
 section h3 {
     font-family: 'Georgia', serif;
     font-size: 1.4em;
-    color: #d4b96a;
+    color: #9B59B6;
     margin-top: 25px;
     margin-bottom: 12px;
     letter-spacing: 1px;
@@ -140,17 +145,17 @@ hr {
 
 /* --- Quiénes Somos - Selector por ID --- */
 #quienes-somos {
-    background: linear-gradient(135deg, #1e1e36, #2a1a3a);
+    background:#FDFBFA;
     border-radius: 15px;
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 12px 30px rgba(64,54,60,.08);
     border-left: 4px solid #c9a84c;
 }
 
 /* --- Misión y Visión - Selector por ID --- */
 #mision-vision {
-    background: linear-gradient(135deg, #2a1a3a, #1e1e36);
+    background:#FDFBFA;
     border-radius: 15px;
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 12px 30px rgba(64,54,60,.08);
     border-right: 4px solid #c9a84c;
 }
 
@@ -161,9 +166,9 @@ hr {
 
 /* --- Nuestra Historia - Selector por ID --- */
 #nuestra-historia {
-    background: linear-gradient(135deg, #1e1e36, #2a1a3a);
+    background:#FDFBFA;
     border-radius: 15px;
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 12px 30px rgba(64,54,60,.08);
     text-align: center;
 }
 
@@ -186,9 +191,9 @@ hr {
 
 /* --- Productos - Selector por ID --- */
 #productos {
-    background: linear-gradient(135deg, #2a1a3a, #1e1e36);
+    background:#FDFBFA;
     border-radius: 15px;
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 12px 30px rgba(64,54,60,.08);
     text-align: center;
 }
 
@@ -210,23 +215,23 @@ hr {
     border-radius: 10px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
     margin: 8px;
-    border: 2px solid #3a2a4a;
+    border: 2px solid #E4C8D3;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 #productos img:hover {
     transform: scale(1.05);
     box-shadow: 0 8px 30px rgba(201, 168, 76, 0.3);
-    border-color: #c9a84c;
+    border-color: #40363C;
 }
 
 /* --- Clase .producto: encapsula cada categoría --- */
 .producto {
     margin-bottom: 40px;
     padding: 20px;
-    background: rgba(0, 0, 0, 0.15);
+    background: #FFFFFF;
     border-radius: 12px;
-    border: 1px solid rgba(201, 168, 76, 0.1);
+    border: 1px solid #E4C8D3;
 }
 
 .producto:last-child {
@@ -254,7 +259,7 @@ hr {
 .galeria img:hover {
     transform: scale(1.05);
     box-shadow: 0 8px 30px rgba(201, 168, 76, 0.3);
-    border-color: #c9a84c;
+    border-color: #40363C;
 }
 
 /* --- Clase .btn-cotizar: botón CTA en cada producto --- */
@@ -283,9 +288,9 @@ hr {
 
 /* --- Testimonios - Selector por ID --- */
 #testimonios {
-    background: linear-gradient(135deg, #1e1e36, #2a1a3a);
+    background:#FDFBFA;
     border-radius: 15px;
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 12px 30px rgba(64,54,60,.08);
     text-align: center;
 }
 
@@ -306,22 +311,22 @@ hr {
 #testimonios blockquote p {
     font-size: 1.3em;
     font-style: italic;
-    color: #d4b96a;
+    color: #9B59B6;
     text-align: center;
     margin-bottom: 10px;
 }
 
 #testimonios blockquote footer {
     font-size: 0.9em;
-    color: #b8a88a;
+    color: #E4C8D3;
     text-align: right;
 }
 
 /* --- Contacto - Selector por ID --- */
 #contacto {
-    background: linear-gradient(135deg, #2a1a3a, #1e1e36);
+    background:#FDFBFA;
     border-radius: 15px;
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 12px 30px rgba(64,54,60,.08);
     text-align: center;
 }
 
@@ -334,13 +339,13 @@ hr {
 }
 
 #contacto a {
-    color: #d4b96a;
+    color: #9B59B6;
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
 #contacto a:hover {
-    color: #c9a84c;
+    color: #40363C;
     text-decoration: underline;
 }
 
@@ -356,7 +361,7 @@ hr {
 }
 
 #contacto ul li strong {
-    color: #c9a84c;
+    color: #40363C;
     margin-right: 8px;
 }
 
@@ -365,7 +370,7 @@ form {
     max-width: 500px;
     margin: 25px auto 0;
     padding: 30px;
-    background: rgba(0, 0, 0, 0.2);
+    background: #FFFFFF;
     border-radius: 15px;
     border: 1px solid rgba(201, 168, 76, 0.15);
 }
@@ -379,7 +384,7 @@ form label {
     display: block;
     font-family: 'Verdana', 'Arial', sans-serif;
     font-size: 0.85em;
-    color: #b8a88a;
+    color: #8B7485;
     margin-bottom: 5px;
     font-weight: bold;
     text-transform: uppercase;
@@ -390,10 +395,10 @@ form input,
 form textarea {
     width: 100%;
     padding: 12px 15px;
-    background: rgba(255, 255, 255, 0.05);
+    background: #F8EFEB;
     border: 1px solid rgba(201, 168, 76, 0.3);
     border-radius: 8px;
-    color: #e8e0d4;
+    color: #40363C;
     font-family: 'Verdana', 'Arial', sans-serif;
     font-size: 1em;
     transition: border-color 0.3s ease, box-shadow 0.3s ease;
@@ -402,13 +407,13 @@ form textarea {
 form input:focus,
 form textarea:focus {
     outline: none;
-    border-color: #c9a84c;
+    border-color: #40363C;
     box-shadow: 0 0 15px rgba(201, 168, 76, 0.2);
 }
 
 form button {
-    background: linear-gradient(135deg, #c9a84c, #a8882e);
-    color: #1a1a2e;
+    background: #40363C;
+    color: #F8EFEB;
     padding: 14px 40px;
     border: none;
     border-radius: 25px;
@@ -422,14 +427,14 @@ form button {
 }
 
 form button:hover {
-    background: linear-gradient(135deg, #d4b96a, #c9a84c);
+    background: #DAAB69;
     transform: translateY(-2px);
     box-shadow: 0 5px 20px rgba(201, 168, 76, 0.4);
 }
 
 /* --- Footer - Selector por elemento --- */
 footer {
-    background: linear-gradient(135deg, #0f0f1a, #1a1a2e);
+    background: #40363C;
     text-align: center;
     padding: 30px 20px;
     border-top: 3px solid #c9a84c;
@@ -439,12 +444,12 @@ footer {
 footer p {
     font-family: 'Verdana', 'Arial', sans-serif;
     font-size: 0.9em;
-    color: #6a5a4a;
+    color: #F8EFEB;
     margin: 5px 0;
 }
 
 footer p:first-child {
-    color: #b8a88a;
+    color: #E4C8D3;
 }
 
 /* --- Botón flotante WhatsApp --- */
@@ -501,7 +506,7 @@ footer p:first-child {
 }
 
 .lightbox-cerrar:hover {
-    color: #c9a84c;
+    color: #40363C;
 }
 
 .lightbox-imagen {
@@ -515,9 +520,9 @@ footer p:first-child {
 
 /* --- Sección Confianza - Selector por ID --- */
 #confianza {
-    background: linear-gradient(135deg, #1e1e36, #2a1a3a);
+    background:#FDFBFA;
     border-radius: 15px;
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 12px 30px rgba(64,54,60,.08);
     text-align: center;
 }
 
@@ -531,15 +536,15 @@ footer p:first-child {
 
 .confianza-item {
     padding: 30px 20px;
-    background: rgba(0, 0, 0, 0.2);
+    background: #FFFFFF;
     border-radius: 12px;
-    border: 1px solid rgba(201, 168, 76, 0.1);
+    border: 1px solid #E4C8D3;
     transition: transform 0.3s ease, border-color 0.3s ease;
 }
 
 .confianza-item:hover {
     transform: translateY(-5px);
-    border-color: #c9a84c;
+    border-color: #40363C;
 }
 
 .confianza-icono {
@@ -549,7 +554,7 @@ footer p:first-child {
 }
 
 .confianza-item h3 {
-    color: #c9a84c;
+    color: #40363C;
     font-size: 1.15em;
     margin-top: 0;
     margin-bottom: 10px;
@@ -558,7 +563,7 @@ footer p:first-child {
 
 .confianza-item p {
     font-size: 0.95em;
-    color: #b8a88a;
+    color: #8B7485;
     text-align: center;
     margin-bottom: 0;
 }
